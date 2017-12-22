@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+	
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<span style="color:#007AFF;float: right;" class="mui-icon mui-icon-contact"></span>
+			<h1 class="mui-title">设置</h1>
+		</header>
+		<div id="div_center" class="mui-content">
+			
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						新消息通知
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						隐私
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						通用
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view" style="margin-top: 25px;">
+				<li class="mui-table-view-cell">
+					<a id="about" class="mui-navigate-right">
+						关于网约车
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view" style="margin-top: 25px;">
+				<li class="mui-table-view-cell">
+					<a id="btn_quit" style="text-align: center;color: #FF3B30;">
+						退出登录
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+		
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			var btn_quit = document.getElementById("btn_quit");
+			//监听 出发  点击事件
+			btn_quit.addEventListener("tap",function () {
+				plus.nativeUI.toast('退出！');
+				plus.runtime.quit();
+				plus.storage.removeItem("lauchFlag");
+			});
+		</script>
+	</body>
+
+</html>

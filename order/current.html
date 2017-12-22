@@ -1,0 +1,371 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>当前订单</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+	<style>
+		/*
+			头部始终特效
+		*/
+		.div_title{
+			border:dashed 1px #ACACB4;
+			border-left: none;
+			border-right: none;
+			border-top: none;
+			width: 100%;
+			color:#0062CC;
+			top: -10px;
+			font-size: medium;
+			text-align: center;
+			float: center;
+			border-radius:8px 8px 8px 8px;
+		}
+		.subscript_e {
+			color: #FFFFFF;
+			height: 16px;
+			width: 16px;
+			left: 98%;
+			top: 7px;
+			border-radius:8px 8px 8px 8px;
+			text-align:center;
+			line-height: 16px;
+			font-size:8px;
+			position: absolute;
+			background-color: red;
+			-moz-transform:rotate(20deg);
+			-webkit-transform:rotate(20deg);
+			-o-transform:rotate(20deg);
+			-ms-transform:rotate(20deg);
+			transform:rotate(20deg);
+			overflow: hidden; /*防止内容超出容器或者产生自动换行*/
+		}
+		.subscript_s {
+			color: #FFFFFF;
+			height: 16px;
+			width: 16px;
+			left: -5px;
+			top: 7px;
+			border-radius:8px 8px 8px 8px;
+			text-align:center;
+			line-height: 16px;
+			font-size:8px;
+			position: absolute;
+			background-color: green;
+			-moz-transform:rotate(20deg);
+			-webkit-transform:rotate(20deg);
+			-o-transform:rotate(20deg);
+			-ms-transform:rotate(20deg);
+			transform:rotate(20deg);
+			overflow: hidden; /*防止内容超出容器或者产生自动换行*/
+		}
+	</style>	
+	<body>
+		<header  id="header" class="mui-bar mui-bar-nav">
+			<!--<span style="color:#8A6DE9;" class="mui-icon mui-icon-circle"></span>-->
+			<h1 class="mui-title">当前订单</h1>
+			<span id="s_endtrip" style="color:#007AFF;float: right;color: #EC971F;font-size: x-large;" class="mui-icon mui-icon-minus-filled"></span>
+			<span style="float: right;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<span id="s_starttrip" style="color:#007AFF;float: right;color: #008000;font-size: x-large;" class="mui-icon mui-icon-paperplane"></span>
+		</header>
+		
+		<div id="div_center" class="mui-content">
+			<ul class="mui-table-view" style="margin-top: 15px;">
+				<li class="mui-table-view-cell">
+					<p style="float: right;">
+			        	 
+			        </p>
+			        <div class="mui-table-cell mui-col-xs-1 mui-text-center">
+			            <div class="div_title">
+				            <div class="subscript_e">
+								终
+							</div>
+							<div class="subscript_s">
+								始
+							</div>
+				        	昆明市  至  大理市
+			        	</div>
+			        </div>
+				</li>
+			</ul>
+			<ul class="mui-table-view" style="margin-top: 15px;">
+				<li class="mui-table-view-cell">
+					<p style="float: left;color: #000;">
+			        	出发时间
+			        </p>
+					<p style="float: right;color: #0062CC;">
+			        	2017-12-22 15:00 
+			        </p>
+			        <br/>
+			         <h6>
+		                    	
+		                    	<span>
+		                    		<label style="color: #000;">预计用时</label>：
+		                    		<label style="font-size: smaller;color: #EC971F;">
+		                    			<var style="font-size: medium;color: #F0AD4E;">3.2</var>小时</label>
+		                    	</span>
+		                    	<span>
+		                    		<label style="color: #000;">乘客数目</label>：
+		                    		<label style="font-size: smaller;color: #EC971F;">
+		                    			<var style="font-size: medium;color: #F0AD4E;">5</var>位</label>
+		                    	</span>
+		                    	<span>
+		                    		<label style="color: #000;">已经上车</label>：
+		                    		<label style="font-size: smaller;color: #EC971F;">
+		                    			<var style="font-size: medium;color: #F0AD4E;">3</var>位</label>
+		                    	</span>
+		            </h6>
+		             <h6>
+		                    	<span >
+		                    		<label style="color: #000;">车牌号码</label>：
+		                    		<label style="font-size: smaller;color: #EC971F;">云L1A644</label>
+		                    	</span>
+		                    	<span>
+		                    		<label style="color: #000;">行驶里程</label>：
+		                    		<label style="font-size: smaller;color: #EC971F;">
+		                    			<var style="font-size: medium;color: #F0AD4E;">384</var> 公里</label>
+		                    	</span>
+		                    	<span >
+		                    		<label style="color: #000;">指派司机</label>：
+		                    		<label style="font-size: smaller;color: #EC971F;">张辉</label>
+		                    	</span>
+		            </h6>
+				</li>
+			</ul>
+			
+			<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed" style="margin-top: 15px;">
+		        <li class="mui-table-view-cell">
+		            <div class="mui-table">
+		                <div class="mui-table-cell mui-col-xs-10">
+		                    <h4 class="mui-ellipsis">
+		                    	<div >
+		                    		<img style="width: 24px;height: 21px;" src="../images/male.png" />	
+		                    		昆明-大理
+		                    	</div>
+		                    </h4>
+		                     <h6>
+		                    	<span >
+		                    		<label style="color: #adadad;font-family: simsun;">乘车人</label>：
+		                    		<label style="font-size: smaller;color: #0062CC;">忽悠</label>
+		                    	</span>
+		                    	<span>
+		                    		<label style="color: #adadad;">性别</label>：
+		                    		<label style="font-size: smaller;color: #0062CC;">男</label>
+		                    	</span>
+		                    </h6>
+		                     <h5>
+		                    	<span>
+		                    		<label style="color: #adadad;">联系电话</label>：
+		                    		<label style="font-size: smaller;color: #0062CC;">18752621547</label>
+		                    	</span>
+		                    </h5>
+		                    <p style="color: #EC971F;" class="mui-h6 mui-ellipsis">备注：需要坐第一排！</p>
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                	<span style="color:#007AFF;" class="mui-icon mui-icon-navigate"></span>
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                	<span style="color:#007AFF;" class="mui-icon mui-icon-phone-filled"></span>
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                    <span style="color:#007AFF;" class="mui-icon mui-icon-personadd-filled"></span>
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                    <span style="color: #CF2D28;font-size: x-small;" class="mui-h5">未上车</span>
+		                </div>
+		            </div>
+		        </li>
+		        <li class="mui-table-view-cell">
+		             <div class="mui-table">
+		                <div class="mui-table-cell mui-col-xs-10">
+		                    <h4 class="mui-ellipsis">
+		                    	<div >
+		                    		<img style="width: 24px;height: 21px;" src="../images/female.png" />	
+		                    		昆明-大理
+		                    	</div>
+		                    </h4>
+		                     <h6>
+		                    	<span >
+		                    		<label style="color: #adadad;font-family: simsun;">乘车人</label>：
+		                    		<label style="font-size: smaller;color: #0062CC;">李柏羽</label>
+		                    	</span>
+		                    	<span>
+		                    		<label style="color: #adadad;">性别</label>：
+		                    		<label style="font-size: smaller;color: #0062CC;">
+		                    			女</label>
+		                    	</span>
+		                    </h6>
+		                    <h5>
+		                    	<span>
+		                    		<label style="color: #adadad;">联系电话</label>：
+		                    		<label style="font-size: smaller;color: #0062CC;">15232651247</label>
+		                    	</span>
+		                    </h5>
+		                    <p style="color: #EC971F;" class="mui-h6 mui-ellipsis">备注：第一个接送！</p>
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                	<span style="color:#007AFF;" class="mui-icon mui-icon-navigate"></span>
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                	<span style="color:#007AFF;" class="mui-icon mui-icon-phone-filled"></span>
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                    <span style="color:#007AFF;" class="mui-icon mui-icon-personadd-filled"></span>
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                    <span style="color: #CF2D28;font-size: x-small;" class="mui-h5">未上车</span>
+		                </div>
+		            </div>
+		        </li>
+		        <li class="mui-table-view-cell">
+		            <div class="mui-table">
+		                <div class="mui-table-cell mui-col-xs-10">
+		                    <h4 class="mui-ellipsis">
+		                    	<div >
+		                    		<img style="width: 24px;height: 21px;" src="../images/female.png" />	
+		                    		昆明-大理
+		                    	</div>
+		                    </h4>
+		                     <h6>
+		                    	<span >
+		                    		<label style="color: #adadad;font-family: simsun;">乘车人</label>：
+		                    		<label style="font-size: smaller;color: #0062CC;">李丽丽</label>
+		                    	</span>
+		                    	<span>
+		                    		<label style="color: #adadad;">性别</label>：
+		                    		<label style="font-size: smaller;color: #0062CC;">女</label>
+		                    	</span>
+		                    </h6>
+		                     <h5>
+		                    	<span>
+		                    		<label style="color: #adadad;">联系电话</label>：
+		                    		<label style="font-size: smaller;color: #0062CC;">18752621547</label>
+		                    	</span>
+		                    </h5>
+		                    <p style="color: #EC971F;" class="mui-h6 mui-ellipsis">备注：无！</p>
+		                </div>
+		                
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                	<span style="color:#EC971F;" class="mui-icon mui-icon-minus-filled"></span>
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                    <span style="color: #007AFF;" class="mui-h5">已上车</span>
+		                </div>
+		            </div>
+		        </li>
+		        <li class="mui-table-view-cell">
+		            <div class="mui-table">
+		                <div class="mui-table-cell mui-col-xs-10">
+		                    <h4 class="mui-ellipsis">
+		                    	<div >
+		                    		<img style="width: 24px;height: 21px;" src="../images/male.png" />	
+		                    		昆明-大理
+		                    	</div>
+		                    </h4>
+		                     <h6>
+		                    	<span >
+		                    		<label style="color: #adadad;font-family: simsun;">乘车人</label>：
+		                    		<label style="font-size: smaller;color: #0062CC;">李文昌</label>
+		                    	</span>
+		                    	<span>
+		                    		<label style="color: #adadad;">性别</label>：
+		                    		<label style="font-size: smaller;color: #0062CC;">男</label>
+		                    	</span>
+		                    </h6>
+		                     <h5>
+		                    	<span>
+		                    		<label style="color: #adadad;">联系电话</label>：
+		                    		<label style="font-size: smaller;color: #0062CC;">18752621547</label>
+		                    	</span>
+		                    </h5>
+		                    <p style="color: #EC971F;" class="mui-h6 mui-ellipsis">备注：无！</p>
+		                </div>
+		                
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                	<span style="color:#EC971F;" class="mui-icon mui-icon-minus-filled"></span>
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                    <span style="color: #007AFF;" class="mui-h5">已上车</span>
+		                </div>
+		            </div>
+		        </li>
+		        <li class="mui-table-view-cell">
+		            <div class="mui-table">
+		                <div class="mui-table-cell mui-col-xs-10">
+		                    <h4 class="mui-ellipsis">
+		                    	<div >
+		                    		<img style="width: 24px;height: 21px;" src="../images/male.png" />	
+		                    		昆明-大理
+		                    	</div>
+		                    </h4>
+		                     <h6>
+		                    	<span >
+		                    		<label style="color: #adadad;font-family: simsun;">乘车人</label>：
+		                    		<label style="font-size: smaller;color: #0062CC;">张骞</label>
+		                    	</span>
+		                    	<span>
+		                    		<label style="color: #adadad;">性别</label>：
+		                    		<label style="font-size: smaller;color: #0062CC;">男</label>
+		                    	</span>
+		                    </h6>
+		                     <h5>
+		                    	<span>
+		                    		<label style="color: #adadad;">联系电话</label>：
+		                    		<label style="font-size: smaller;color: #0062CC;">18752221547</label>
+		                    	</span>
+		                    </h5>
+		                    <p style="color: #EC971F;" class="mui-h6 mui-ellipsis">备注：无！</p>
+		                </div>
+		                
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                	<span style="color:#EC971F;" class="mui-icon mui-icon-minus-filled"></span>
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                    <span style="color: #007AFF;" class="mui-h5">已上车</span>
+		                </div>
+		            </div>
+		        </li>
+		    </ul>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			var s_starttrip = document.getElementById("s_starttrip");
+			//监听 出发  点击事件
+			s_starttrip.addEventListener("tap",function () {
+				plus.nativeUI.alert('出发啦！');
+			});
+			var s_endtrip = document.getElementById("s_endtrip");
+			//监听 行程结束  点击事件
+			s_endtrip.addEventListener("tap",function () {
+				plus.nativeUI.toast('行程结束啦！');
+			});
+			//监听 地图导航  点击事件
+			mui(".mui-table-view-cell").on('tap','span[class="mui-icon mui-icon-navigate"]',function(){
+				plus.nativeUI.toast('地图导航！');
+			});
+			//监听 拨号  点击事件
+			mui(".mui-table-view-cell").on('tap','span[class="mui-icon mui-icon-phone-filled"]',function(){
+				plus.nativeUI.toast('拨号！');
+			});
+			//监听 乘客上车  点击事件
+			mui(".mui-table-view-cell").on('tap','span[class="mui-icon mui-icon-personadd-filled"]',function(){
+				plus.nativeUI.toast('乘客上车！');
+			});
+			//监听 乘客下车  点击事件
+			mui(".mui-table-view-cell").on('tap','span[class="mui-icon mui-icon-minus-filled"]',function(){
+				plus.nativeUI.toast('乘客下车！');
+			});
+			(function($, doc) {
+				$.plusReady(function() {
+					 
+				});
+			});
+			
+		</script>
+	</body>
+
+</html>
