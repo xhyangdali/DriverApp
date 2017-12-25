@@ -1,67 +1,68 @@
 {
-  "main.html": {
-    "resources": [
-      "order/current.html",
-      "fonts/mui.ttf",
-      "js/app.js",
-      "js/mui.min.js",
-      "css/mui.min.css",
-      "js/jquery.min.js"
-    ],
-    "refer": [
-      "order/current.html",
-      "sys/settings.html",
-      "order/history.html"
-    ]
-  },
-  "login.html": {
-    "resources": [
-      "js/app.js",
-      "js/mui.min.js",
-      "images/sinaweibo.png",
-      "css/mui.min.css",
-      "css/style.css",
-      "images/weixin.png",
-      "images/qq.png",
-      "js/mui.enterfocus.js",
-      "js/jquery.min.js",
-      "fonts/mui.ttf"
-    ],
-    "refer": [
-      "main.html",
-      "template/guide.html"
-    ]
-  },
-  "sys/settings.html": {
-    "resources": [
-      "js/mui.min.js",
-      "css/mui.min.css",
-      "fonts/mui.ttf"
-    ]
-  },
-  "template/guide.html": {
-    "resources": [
-      "js/mui.min.js",
-      "css/mui.min.css"
-    ]
-  },
-  "order/history.html": {
-    "resources": [
-      "js/mui.min.js",
-      "fonts/mui.ttf",
-      "css/mui.min.css",
-      "images/male.png",
-      "images/detail.png"
-    ]
-  },
-  "order/current.html": {
-    "resources": [
-      "js/mui.min.js",
-      "fonts/mui.ttf",
-      "css/mui.min.css",
-      "images/qq.png",
-      "images/male.png",
-      "images/female.png"
-    ]
-  }
+	"main.html": {
+		"resources": [
+			"order/current.html",
+			"fonts/mui.ttf",
+			"js/app.js",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"js/jquery.min.js"
+		],
+		"refer": [
+			"order/current.html",
+			"sys/settings.html",
+			"order/history.html"
+		]
+	},
+	"login.html": {
+		"resources": [
+			"js/app.js",
+			"js/mui.min.js",
+			"images/sinaweibo.png",
+			"css/mui.min.css",
+			"css/style.css",
+			"images/weixin.png",
+			"images/qq.png",
+			"js/mui.enterfocus.js",
+			"js/jquery.min.js",
+			"fonts/mui.ttf",
+			"images/car.png"
+		],
+		"refer": [
+			"main.html",
+			"template/guide.html"
+		]
+	},
+	"sys/settings.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"fonts/mui.ttf"
+		]
+	},
+	"template/guide.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css"
+		]
+	},
+	"order/history.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"images/male.png",
+			"images/detail.png"
+		]
+	},
+	"order/current.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"images/qq.png",
+			"images/male.png",
+			"images/female.png"
+		]
+	}
 }

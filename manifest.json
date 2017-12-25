@@ -268,7 +268,8 @@
 					"images/qq.png",
 					"images/sinaweibo.png",
 					"images/weixin.png",
-					"js/jquery.min.js"
+					"js/jquery.min.js",
+					"images/car.png"
 				],
 				"refer": [
 					"unlock.html",
